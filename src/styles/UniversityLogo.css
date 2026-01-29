@@ -1,0 +1,18 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing-sm */
+  font-weight: 700;
+  text-decoration: none;
+  color: #1e3a8a; /* primary-blue */
+}
+
+.logo-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  border-radius: 0.375rem; /* radius-md */
+  font-weight: 800;
+}

@@ -1,0 +1,54 @@
+/* src/components/AttendanceRecord.css */
+.record-card {
+  background-color: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  padding: var(--spacing-md);
+  transition: all var(--transition-fast);
+}
+
+.record-card:hover {
+  border-color: var(--slate-300);
+  box-shadow: var(--shadow-sm);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.date {
+  font-weight: 600;
+  color: var(--slate-800);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.class-name {
+  font-weight: 600;
+  color: var(--slate-800);
+  margin-bottom: var(--spacing-xs);
+}
+
+.record-details {
+  display: flex;
+  gap: var(--spacing-md);
+  color: var(--slate-600);
+  font-size: 0.875rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}

@@ -1,0 +1,41 @@
+/* src/components/EmptyState.css */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--slate-800);
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-message {
+  color: var(--slate-600);
+  max-width: 400px;
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.action-button {
+  margin-top: var(--spacing-md);
+}
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}

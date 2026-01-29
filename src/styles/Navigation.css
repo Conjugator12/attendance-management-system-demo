@@ -1,0 +1,52 @@
+/* src/components/Navigation.css */
+.nav-container {
+  background-color: white;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.nav-item {
+  padding: var(--spacing-md) var(--spacing-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+  color: var(--slate-600);
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: var(--primary-blue);
+  background-color: var(--slate-50);
+}
+
+.nav-item.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.nav-icon {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 640px) {
+  .nav-item span:not(.nav-icon) {
+    display: none;
+  }
+  
+  .nav-item {
+    padding: var(--spacing-md);
+  }
+}

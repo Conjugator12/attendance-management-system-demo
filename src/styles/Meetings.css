@@ -1,0 +1,19 @@
+/* src/styles/Meetings.css */
+.meetings-page {
+  padding: 2rem;
+}
+
+.meetings-page h1 {
+  margin-bottom: 1rem;
+  color: #1e3a8a; /* Primary Blue */
+}
+
+.meetings-page p.text-muted {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.meetings-page .grid {
+  display: grid;
+  gap: 1rem;
+}

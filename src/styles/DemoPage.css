@@ -1,0 +1,209 @@
+/* src/styles/DemoPage.css */
+.demo-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+  padding: 20px;
+}
+
+.demo-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 20px 60px rgba(0, 150, 255, 0.15);
+  animation: slideUp 0.5s ease-out;
+}
+
+.demo-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.demo-header h1 {
+  color: #2d3748;
+  font-size: 2.2rem;
+  margin: 15px 0 10px;
+}
+
+.demo-header p {
+  color: #718096;
+  font-size: 1.1rem;
+}
+
+.demo-role-selection {
+  margin: 30px 0;
+}
+
+.demo-role-selection h3 {
+  color: #4a5568;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.role-option:hover {
+  border-color: #90cdf4;
+  background: #f0f9ff;
+}
+
+.role-option.selected {
+  border-color: #3182ce;
+  background: #ebf8ff;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+}
+
+.role-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.role-info h4 {
+  color: #2d3748;
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.role-info p {
+  color: #718096;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.selected-check {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #3182ce;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.demo-features {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.demo-features h3 {
+  color: #4a5568;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.demo-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.demo-features li {
+  color: #4a5568;
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.demo-features li:before {
+  content: "•";
+  color: #3182ce;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.demo-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.demo-start-btn {
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  color: white;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.demo-start-btn:hover {
+  background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(49, 130, 206, 0.4);
+}
+
+.demo-note {
+  text-align: center;
+  padding: 20px;
+  background: #fffaf0;
+  border-radius: 10px;
+  border: 1px solid #fed7d7;
+  margin-top: 20px;
+}
+
+.demo-note p {
+  color: #744210;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .demo-card {
+    padding: 25px 20px;
+  }
+  
+  .role-option {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .role-info h4 {
+    text-align: center;
+  }
+}
